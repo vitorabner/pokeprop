@@ -1,7 +1,7 @@
 [![Build Status](https://img.shields.io/travis/vitorabner/iron-mask/master.svg?style=flat)](https://travis-ci.org/vitorabner/iron-mask) [![Coverage Status](https://coveralls.io/repos/github/vitorabner/iron-mask/badge.svg?branch=feature%2Fadd-coverage)](https://coveralls.io/github/vitorabner/iron-mask?branch=feature%2Fadd-coverage)
 
 <p align="center">
-  <img src="https://preview.ibb.co/etXhBQ/pokeprob.png"/>
+  <img src="https://preview.ibb.co/etXhBQ/pokeprop.png"/>
 </p>
 
 > Pick multiples properties from JSON
@@ -14,7 +14,7 @@ $ npm install --save pokeprop
 ## Usage
 
 ```js
-const pokeprob = require('pokeprob')
+const pokeprop = require('pokeprop')
 
 const object = {
   company: {
@@ -33,11 +33,13 @@ const object = {
   }
 }
 
-const pickedProjpsObject = pokeprob([
+const pickedProjpsObject = pokeprop([
   'company.facebook.products',
   'products.games',
   'company.microsoft.ceo'
 ], object)
+
+// Also it's possible to use pokeprop([paths])(object)
 
 //  Output:
 //  pickedPropsObject = {
