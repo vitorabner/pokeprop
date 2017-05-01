@@ -4,7 +4,7 @@
   "description": "Pick multiples properties from JSON",
   "main": "src/pokeprop.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "ava 'test/**/*.js'",
     "lint": "eslint 'src/**/*.js' 'test/**/*.js'"
   },
   "repository": {
@@ -21,6 +21,7 @@
     "ramda": "^0.23.0"
   },
   "devDependencies": {
+    "ava": "^0.19.1",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.2.0",
