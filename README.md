@@ -33,7 +33,7 @@ const object = {
   }
 }
 
-const pickedProjpsObject = pokeprop([
+const pickedPropsObject = pokeprop([
   'company.facebook.products',
   'products.games',
   'company.microsoft.ceo'
