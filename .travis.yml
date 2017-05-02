@@ -4,3 +4,6 @@ node_js:
 
 before_script:
   - ./node_modules/.bin/eslint 'test/**/*.js' 'src/**/*.js'
+
+after_success: 
+  - npm run coveralls
