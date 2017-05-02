@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/vitorabner/pokeprop.svg?token=spM8iZCYkTyEsrsEszkf&branch=master)](https://travis-ci.com/vitorabner/pokeprop) [![Coverage Status](https://coveralls.io/repos/github/vitorabner/iron-mask/badge.svg?branch=feature%2Fadd-coverage)](https://coveralls.io/github/vitorabner/iron-mask?branch=feature%2Fadd-coverage)
+[![Build Status](https://travis-ci.com/vitorabner/pokeprop.svg?token=spM8iZCYkTyEsrsEszkf&branch=master)](https://travis-ci.com/vitorabner/pokeprop) [![Coverage Status](https://coveralls.io/repos/github/vitorabner/pokeprop/badge.svg?branch=feature%2Fadd-coveralls)](https://coveralls.io/github/vitorabner/pokeprop?branch=feature%2Fadd-coveralls)
 
 <p align="center">
   <img src="https://preview.ibb.co/etXhBQ/pokeprop.png"/>
