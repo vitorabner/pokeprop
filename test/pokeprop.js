@@ -51,3 +51,9 @@ test('pokeprop: pick multiplies properties from an object with multiples propert
     }
   })
 })
+
+test('pokeprop: pick lib property from an object with one property using curried pokeprop', t => {
+  const object = { lib: 'pokeprop' }
+  const picked = pokeprop(['lib'])(object)
+  t.deepEqual(picked, object)
+})
