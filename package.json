@@ -1,5 +1,5 @@
 {
-  "name": "pokeprob",
+  "name": "pokeprop",
   "version": "1.0.0",
   "description": "Pick multiples properties from JSON",
   "main": "src/pokeprop.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vitorabner/pokeprob.git"
+    "url": "git+https://github.com/vitorabner/pokeprop.git"
   },
   "author": "Vitor Abner <vitorabner@gmail.com> (https://github.com/vitorabner)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vitorabner/pokeprob/issues"
+    "url": "https://github.com/vitorabner/pokeprop/issues"
   },
-  "homepage": "https://github.com/vitorabner/pokeprob#readme",
+  "homepage": "https://github.com/vitorabner/pokeprop#readme",
   "dependencies": {
     "ramda": "^0.23.0"
   },
