@@ -43,11 +43,11 @@ test('pokeprop: pick multiplies properties from an object with multiples propert
         products: ['facebook', 'instagram', 'oculus rift']
       },
       microsoft: {
-        ceo: 'Satya Nadella',
+        ceo: 'Satya Nadella'
       }
     },
     products: {
-      games: ['oculus rift', 'xbox'],
+      games: ['oculus rift', 'xbox']
     }
   })
 })
