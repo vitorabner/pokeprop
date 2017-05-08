@@ -25,8 +25,9 @@ const createPickedObject = pathValueList => (
   R.reduce(mergePathValueList, {}, pathValueList)
 )
 
-const pokeprop = (propsPathList, obj) => (
-  R.pipe(createPathValueList(obj), createPickedObject)(propsPathList)
-)
+const pokeprop = (propsPathList, obj) => {
+  if (!R.is(Object, obj)) return obj
+  return R.pipe(createPathValueList(obj), createPickedObject)(propsPathList)
+}
 
 module.exports = R.curry(pokeprop)

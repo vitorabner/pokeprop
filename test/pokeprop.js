@@ -1,19 +1,19 @@
 const { test } = require('ava')
 const pokeprop = require('../src/pokeprop')
 
-test('pokeprop: pick lib property from an object with one property', t => {
+test('pick lib property from an object with one property', t => {
   const object = { lib: 'pokeprop' }
   const picked = pokeprop(['lib'], object)
   t.deepEqual(picked, object)
 })
 
-test('pokeprop: pick lib.name property from an object with nested property', t => {
+test('pick lib.name property from an object with nested property', t => {
   const object = { lib: { name: 'pokeprop' } }
   const picked = pokeprop(['lib.name'], object)
   t.deepEqual(picked, object)
 })
 
-test('pokeprop: pick multiplies properties from an object with multiples properties', t => {
+test('pick multiplies properties from an object with multiples properties', t => {
   const object = {
     company: {
       facebook: {
@@ -52,8 +52,14 @@ test('pokeprop: pick multiplies properties from an object with multiples propert
   })
 })
 
-test('pokeprop: pick lib property from an object with one property using curried pokeprop', t => {
+test('pick lib property from an object with one property using curried pokeprop', t => {
   const object = { lib: 'pokeprop' }
   const picked = pokeprop(['lib'])(object)
   t.deepEqual(picked, object)
+})
+
+test('try to pick lib property from a string', t => {
+  const string = 'pokeprop'
+  const picked = pokeprop(['lib'])(string)
+  t.deepEqual(picked, string)
 })
